@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.card{
+    position: relative;
+    height:90%;
+    width:90%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.left{
+   width:60%;
+   height:100%;
+   background-color: #FAC50E;
+   position:absolute;
+   left:0;
+   top:0;
+   border-radius: 20px 0px 0px 20px;
+   padding: 15px;
+}
+
+.right{
+   width:40%;
+   height:100%;
+   background-color: #FBE8B5;
+   position:absolute;
+   right:0;
+   top:0;
+   border-radius: 0px 20px 20px 0px;
+   padding: 15px;
+}
+
+#pokemon-img{
+    width: 20%;
+    margin: 15px 25px 50px 25px;
+}
+.ri-menu-line{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+    margin: 10px 15px;
+}
+
+.text{
+    width: 550px;
+    height: 700px;
+    margin: 30px 25px;
+}
+.text h3{
+    font-size: 15px;
+    color: #000000;
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: 10px;
+    margin: 15px 25px;
+}
+.text h1{
+    font-size: 130px;
+    color: #000000;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    margin: 0px 15px;
+}
+.text p{
+    font-size: 16px;
+    color: #000000;
+    font-family: "DM Sans", sans-serif;
+    margin: 15px 25px;
+}
+.text .bottomtext{
+    font-size: 20px;
+    color: #000000;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    margin: 45px 30px;
+}
+
+.card #pokemonball-img{
+    position:absolute;
+    bottom: 0px;
+}
+#pikachu-img{
+    position: absolute;
+    top: 20%;
+    right: 48%;
+    
+}
+.circle-container{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 35px;
+    
+}
+.circle1{
+    width: 15px;
+    height: 15px;
+    background-color: #000000;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.circle2{
+    width: 15px;
+    height: 15px;
+    background-color: #FAC50E;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.circle3{
+    width: 15px;
+    height: 15px;
+    background-color: #FAC50E;
+    border-radius: 50%;
+    margin-bottom: 10px;  
+}
+.circle4{
+    width: 15px;
+    height: 15px;
+    background-color: #FAC50E;
+    border-radius: 50%;
+    margin-bottom: 10px;  
+}
+.circle5{
+    width: 15px;
+    height: 15px;
+    background-color: #FAC50E;
+    border-radius: 50%;
+    margin-bottom: 10px;  
+}

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    font-family: 'Inter', sans-serif;
+    overflow-y: hidden;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+    margin: 10px 30px;
+    
+}
+nav .nav-links{
+    display: flex;
+    gap: 40px;
+    color: #ffffff;
+    /* New Css properties */
+    list-style: none; 
+    font-size: 28px;
+}
+
+nav .GetStarted-btn{
+    padding: 15px 20px;
+    background-color: #131412;
+    font-size: 15px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hero h1{
+    font-size: 100px;
+    color: #ffffff;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.hero .pills{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+.pills .pill{
+    padding: 15px 25px;
+    background-color: #131412;
+    font-size: 15px;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+} 
+.pill:nth-child(1){
+    background-color: #ab3108;
+} 
+.pill:hover{
+    background-color: #ba0f0f;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 50px;
+    /* border:#ffffff solid 2px; */
+}
+.card1, .card2, .card3{
+    width: 300px;
+    height: 400px;
+    background-color: #131412;
+    border-radius: 10px 10px 20px 20px;
+    color: #ffffff;
+}
+.card1 img, .card2 img, .card3 img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px 10px 20px 20px;
+}
+.tag{
+    background-color: #4E1D0E;
+    color: #EB9B6A;
+    padding: 5px 10px;
+    border-radius: 12px;
+    margin-top: 10px;
+    border: none;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.card1 h3, .card2 h3, .card3 h3{
+    font-size: 20px;
+    margin: 10px;
+    text-align: left;
+    padding-right: px;
+    font-weight: 100;
+}
+.card1 p, .card2 p, .card3 p{
+    font-size: 13px;
+    margin: 15px 10px;
+    text-align: left;
+    color: #656262;
+    font-weight: 100;
+}
