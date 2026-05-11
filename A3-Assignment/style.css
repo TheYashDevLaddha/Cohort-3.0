@@ -70,8 +70,7 @@ nav ul {
     object-fit: cover;
     filter: blur(0.5px) brightness(0.75);
     transform: scale(1.05);
-    border-bottom-left-radius: 40% 32%;
-    border-bottom-right-radius: 40% 32%;
+    clip-path: ellipse(90% 100% at 50% 0%)
 }
 
 h2 {
