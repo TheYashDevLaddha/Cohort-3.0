@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Daisuki';
+    src: url(./Assets/Japan\ Daisuki.otf);
+}
+@font-face {
+    font-family: 'Tanseek Modern Pro Arabic Medium';
+    src: url(./Assets/tanseek-modern-pro-arabic-medium.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #231c31;
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
+    padding: 20px 60px;
+    z-index: 1;
+}
+
+nav img {
+    width: 10%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.ri-arrow-right-up-line {
+    color: #F0C7A6;
+}
+
+.ri-instagram-line,
+.ri-telegram-2-line,
+.ri-discord-line {
+    background-color: #FFFFFF;
+    color: rgb(107, 107, 107);
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 25px;
+
+}
+
+.hero-content {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.Background-image {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    filter: blur(0.5px) brightness(0.75);
+    transform: scale(1.05);
+    border-bottom-left-radius: 40% 32%;
+    border-bottom-right-radius: 40% 32%;
+}
+
+h2 {
+    position: absolute;
+    top: 41%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: 'Tanseek Modern Pro Arabic Medium', sans-serif;
+    font-size: 40px;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: 'Daisuki';
+    letter-spacing: 15px;
+    font-size: 90px;
+    text-transform: uppercase;
+}
+.h1-left  { left: 28%; }
+.h1-right { left: 68%; }
+
+h3 {
+    position: absolute;
+    top: 58%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: 'Tanseek Modern Pro Arabic Medium', sans-serif;
+    font-size: 40px;
+}
+
+.hero-character {
+    position: absolute;
+    top: 57.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 100%; */
+    height: 70%;
+}
+
+.hero-button {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #16161649;
+    background-image: url("./Assets/Button.png");
+    background-size: cover;
+    background-position: center;
+    color: #1a1a1a;
+    border: none;
+    padding: 18px 60px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.vision {
+    position: relative;
+    z-index: 8;
+    width: min(1400px, 100%);
+    margin: 0 auto;
+    /* padding: 70px 120px 90px; */
+    overflow: hidden;
+    background: #231c31;
+    text-align: center;
+}
+
+.vision-title,
+.vision-divider,
+.vision-content {
+    position: relative;
+    z-index: 1;
+}
+
+.vision-title {
+    margin-bottom: 35px;
+    font-family: 'Daisuki';
+    font-size: 62px;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: 6px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.vision-divider img{
+    width: 100%;
+    height: 90px;
+    object-fit: contain;
+}
+
+.vision-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 140px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.vision-col p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.94);
+    font-family: 'Tanseek Modern Pro Arabic Medium', sans-serif;
+}
+
+.vision-col p strong,
+.vision-col p u {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.vision-col p u {
+    text-underline-offset: 4px;
+}
