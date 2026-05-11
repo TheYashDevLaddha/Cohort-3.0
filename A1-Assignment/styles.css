@@ -92,9 +92,10 @@ body {
 }
 #pikachu-img{
     position: absolute;
-    top: 20%;
-    right: 48%;
-    
+    top: 50%;
+    transform: translateY(-50%);
+    right: 45%;
+    height: 85%;   
 }
 .circle-container{
     position: absolute;
