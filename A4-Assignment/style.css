@@ -65,6 +65,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    overflow: hidden;
     /* align-items: center; */
 }
 .left-bottom .top-side{
@@ -263,10 +264,8 @@ body {
     height: 22px;
     background: #a855f7;
     border-radius: 50%;
-    
     position: absolute;
     right: 12px;
-
     box-shadow: 0 0 15px #a855f7;
 }
 .nav ul li img{
