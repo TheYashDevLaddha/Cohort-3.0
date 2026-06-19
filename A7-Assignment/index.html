@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Manager — DOM &amp; Events Project</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <h1 class="logo">Task<span>Manager</span></h1>
+
+      <button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false">
+        <span class="toggle-icon">●</span>
+        <span class="toggle-label">Dark mode</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="panel" id="task-creation">
+      <h2 class="panel-title"><span class="num">01</span> Create a Task</h2>
+
+      <form id="taskForm" class="task-form">
+        <input
+          type="text"
+          id="taskTitle"
+          class="text-input"
+          placeholder="What needs to be done?"
+          autocomplete="off"
+          required
+        >
+
+        <select id="taskCategory" class="select-input">
+          <option value="work">Work</option>
+          <option value="personal">Personal</option>
+          <option value="urgent">Urgent</option>
+          <option value="other">Other</option>
+        </select>
+
+        <button type="submit" class="btn btn-solid" id="addTaskBtn">Add Task</button>
+      </form>
+
+    </section>
+
+    <section class="panel" id="task-list-section">
+      <h2 class="panel-title"><span class="num">02</span> Your Tasks</h2>
+
+      <div id="taskList" class="task-list"></div>
+
+      <p class="empty-state" id="emptyState">No tasks yet — add one above.</p>
+    </section>
+
+    <section class="screenshot-section" id="propagation-demo">
+      <h2 class="screenshot-title">Event Propagation Demo</h2>
+      <p class="screenshot-desc">Open browser console and click the button below to see Event Bubbling and Capturing order.</p>
+
+      <div class="demo-grandparent" id="grandparent">
+        <div class="demo-label">Grandparent</div>
+        <div class="demo-parent-box" id="parent">
+          <span class="demo-label">Parent</span>
+          <button class="demo-child-btn" id="childBtn">Child Button</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screenshot-section" id="rendering-pipeline">
+      <h2 class="screenshot-title">Browser Rendering Pipeline</h2>
+
+      <div class="custom-pipeline">
+        <div class="custom-pipe-card">HTML</div>
+        <div class="custom-pipe-arrow">↓</div>
+        <div class="custom-pipe-card">Parsing</div>
+        <div class="custom-pipe-arrow">↓</div>
+        <div class="custom-pipe-card">Tokenization</div>
+        <div class="custom-pipe-arrow">↓</div>
+        <div class="custom-pipe-card">DOM Tree</div>
+        <div class="custom-pipe-arrow">↓</div>
+        <div class="custom-pipe-card">CSS</div>
+        <div class="custom-pipe-arrow">↓</div>
+        <div class="custom-pipe-card">CSSOM Tree</div>
+        <div class="custom-pipe-arrow">↓</div>
+        <div class="custom-pipe-card pipe-merge-card">DOM Tree + CSSOM Tree</div>
+        <div class="custom-pipe-arrow">↓</div>
+        <div class="custom-pipe-card">Render Tree</div>
+      </div>
+    </section>
+
+  </main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
